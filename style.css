@@ -1,1 +1,185 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style: none;
+}
 
+html {
+    scroll-behavior: smooth;
+}
+  
+body{
+   font-family: sans-serif;
+}
+  
+header {
+    position: fixed;  
+    width: 100%;
+    top: 0;
+}
+  
+nav {
+    background: rgba(56, 56, 56, 0.702);
+    color: #f5deb3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo {
+    padding-left: 50px;
+    color: wheat;
+    cursor: pointer;
+}
+
+nav .mainMenu {
+    display: flex;
+    float: right;
+    padding-right: 50px;
+}
+
+
+nav .mainMenu li a {
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: wheat;
+}
+
+nav .mainMenu li a:hover {
+    background: rgb(255,94,0);
+}
+
+nav .openMenu {
+    font-size: 2rem;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+}
+
+nav .mainMenu .closeMenu , .icons i {
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+}
+
+section{
+   background: url(img/workout.png) no-repeat;
+   background-size: cover;
+   height: 670px;
+   width: 100%;
+}
+
+main {
+
+}
+
+.box-motivation {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.container-1, .container-2 {
+    background-color: rgb(247, 244, 244);
+    margin-top: 100px;
+    margin-left: 20px;
+    margin-right: 20px;
+    max-width: 300px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: 1px solid rgb(216, 213, 213);
+    transition: 0.7s;
+}
+
+.container-1:hover, .container-2:hover {
+    margin-top: 90px;
+}
+
+.motivation {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.expression {
+    font-style: oblique;
+    line-height: 25px;
+}
+
+.motivator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0 0 100px;
+}
+
+.name {
+    font-weight: bold;
+    color: orange;
+}
+
+.image img {
+    border-radius: 100px;
+    background-color: orchid;
+}
+
+@media(max-width: 800px){
+    nav .mainMenu {
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: rgb(70, 69, 69);
+        transition: top 1s ease;
+        display: none;
+    }
+    nav .mainMenu .closeMenu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+
+    }
+    nav .openMenu {
+        display: block;
+    }
+
+    nav .mainMenu li a {
+        color: black;
+    }
+
+    nav .mainMenu li a:hover {
+        background: none;
+        color: wheat;
+        font-size: 1.6rem;
+    }
+    .icons i {
+        display: inline-block;
+        padding: 12px;
+    }
+}
+
+@media (max-width:644px) {
+    .box-motivation {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .container-2 {
+        margin-top: 20px;
+    }
+
+}
