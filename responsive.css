@@ -1,0 +1,166 @@
+@media(max-width: 800px){
+    nav .mainMenu {
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: rgb(10, 182, 182);
+        transition: top 1s ease;
+        display: none;
+    }
+    nav .mainMenu .closeMenu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+
+    }
+    nav .openMenu {
+        display: block;
+    }
+
+    nav .mainMenu li a {
+        color: black;
+    }
+
+    nav .mainMenu li a:hover {
+        background: none;
+        color: wheat;
+        font-size: 1.6rem;
+    }
+    .icons i {
+        display: inline-block;
+        padding: 12px;
+    }
+}
+
+@media (max-width:644px) {
+    .box-motivation {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .container-2 {
+        margin-top: 20px;
+    }
+
+    .container-1:hover {
+        margin-top: 100px;
+    }
+
+    .container-2:hover {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width:326px) {
+    figcaption {
+        height: 400px;
+    }
+
+    .box-caption {
+        padding-top: 100px;
+    }
+}
+
+@media (max-width:294px) {
+    .box-caption {
+        padding-left: 5px;
+    }
+}
+
+@media (max-width:854px) {
+    figure ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    figure li {
+        padding: 20px;
+    }
+
+    section p:last-child{
+        text-align: justify;
+    }
+
+    section .justify{
+        text-align: justify;
+    }
+}
+
+@media (max-width:322px) {
+    .caption p:first-child {
+        font-size: 4em;
+    }
+
+    .caption p:last-child {
+        font-size: 1.5em;
+    }
+
+    .container-3 {
+        font-size: 1em;
+    }
+
+    .tiga-m {
+        font-size: 82px;
+    }
+
+    .tiga-m-detail {
+        font-size: 1em;
+    }
+}
+
+@media (max-width:290px) {
+    figure ul li img {
+        width: 200px;
+        height: 150;
+    }
+}
+
+@media (max-width:862px) {
+    .box-container-5 {
+        flex-direction: column;
+    }
+
+    .img-container-5.order {
+        order: 2;
+    }
+
+    .container-5.order2 {
+        order: 1;
+    }
+}
+
+@media (max-width:451px) {
+    .img-container-5 img {
+        width: 300px;
+        height: 150px;
+    }
+}
+
+@media (max-width:300px) {
+    .img-container-5 img {
+        width: 270px;
+        height: 150px;
+    }
+}
+
+@media (max-width:697px) {
+    footer  {
+        height: 320px;
+    }
+}
+
+@media (min-width:279px) and (max-width:717px) {
+    footer  {
+        height: 370px;
+    }
+}
