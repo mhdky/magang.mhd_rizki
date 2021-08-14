@@ -21,7 +21,7 @@ header {
 }
   
 nav {
-    background: rgba(56, 56, 56, 0.702);
+    background: rgb(10, 182, 182);
     color: #f5deb3;
     display: flex;
     justify-content: space-between;
@@ -66,24 +66,20 @@ nav .mainMenu .closeMenu , .icons i {
     cursor: pointer;
 }
 
-section{
-   background: url(img/workout.png) no-repeat;
-   background-size: cover;
-   height: 670px;
-   width: 100%;
-}
 
 main {
-
+    
 }
 
 .box-motivation {
     display: flex;
     justify-content: space-evenly;
+    background-color: rgb(10, 182, 182);
+    height: 400px;
 }
 
 .container-1, .container-2 {
-    background-color: rgb(247, 244, 244);
+    background-color: white;
     margin-top: 100px;
     margin-left: 20px;
     margin-right: 20px;
@@ -93,12 +89,12 @@ main {
     justify-content: center;
     align-items: center;
     border-radius: 10px;
-    border: 1px solid rgb(216, 213, 213);
+    border: 1px solid rgb(146, 143, 143);
     transition: 0.7s;
 }
 
 .container-1:hover, .container-2:hover {
-    margin-top: 90px;
+    margin-top: 70px;
 }
 
 .motivation {
@@ -111,18 +107,20 @@ main {
 .expression {
     font-style: oblique;
     line-height: 25px;
+    font-family: serif;
 }
 
 .motivator {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px 0 0 100px;
+    padding: 20px 0 0 80px;
 }
 
 .name {
     font-weight: bold;
     color: orange;
+    padding-right: 20px;
 }
 
 .image img {
@@ -130,63 +128,192 @@ main {
     background-color: orchid;
 }
 
-@media(max-width: 800px){
-    nav .mainMenu {
-        height: 100vh;
-        position: fixed;
-        top: 0;
-        right: 0;
-        left: 0;
-        z-index: 10;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background: rgb(70, 69, 69);
-        transition: top 1s ease;
-        display: none;
-    }
-    nav .mainMenu .closeMenu {
-        display: block;
-        position: absolute;
-        top: 20px;
-        right: 20px;
-
-    }
-    nav .openMenu {
-        display: block;
-    }
-
-    nav .mainMenu li a {
-        color: black;
-    }
-
-    nav .mainMenu li a:hover {
-        background: none;
-        color: wheat;
-        font-size: 1.6rem;
-    }
-    .icons i {
-        display: inline-block;
-        padding: 12px;
-    }
+.container-4 {
+    background-image: url(img/blue-snow.png);
+    width: 100%;    
 }
 
-@media (max-width:644px) {
-    .box-motivation {
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-    }
+figcaption {
+    background-color: rgb(10, 182, 182);
+    height: 400px;    
+}
 
-    .container-2 {
-        margin-top: 20px;
-    }
+.box-caption {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 30px;
+}
 
-    .container-1:hover {
-        margin-top: 100px;
-    }
+.caption p:first-child {
+    font-size: 6em;
+    color: rgb(243, 49, 49);
+}
 
-    .container-2:hover {
-        margin-top: 20px;
-    }
+.caption p:last-child {
+    font-size: 3em;
+    color: white;
+}
+
+article {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+
+.container-3 {
+    font-size: 25px;
+    font-weight: bold;
+    padding: 80px 20px 0 20px;
+}
+
+
+.box-3m {
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.tiga-m {
+    font-size: 100px;
+    font-weight: bold;
+}
+
+.tiga-m span {
+    color: rgb(243, 49, 49);
+}
+
+.tiga-m-detail {
+    color: rgb(243, 49, 49);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+figure {
+    padding: 20px;
+    
+}
+
+figure ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+figure ul li img {
+    width: 250px;
+    height: 200px;
+    border-radius: 10px;
+    border: 1px solid rgb(218, 215, 215);
+}
+
+figure ul li p{
+    text-align: center;
+    font-weight: bold;
+    color: red;
+}
+
+section {
+    margin: 50px 10px 0 10px;
+}
+
+section p {
+    line-height: 30px;
+    padding: 0 20px;
+    color: rgb(73, 72, 72);
+}
+
+#isi {
+    margin-bottom: 50px;
+}
+
+.box-container-5 {
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.container-5 p {
+    color: rgb(73, 72, 72);
+}
+
+.container-5 p:first-child {
+    font-weight: bold;
+}
+
+.closing {
+    padding: 100px 0;
+}
+
+footer {
+    height: 300px;
+    background-color: rgb(59, 59, 59);
+}
+
+.box-footer {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    max-width: 200px;
+    height: 200px;
+    justify-content: space-between;
+    padding-top: 50px;
+    margin-right: 50px;
+}
+
+.contact li {
+    display: flex;
+    margin-bottom: 10px;
+    max-width: 200px;
+}
+
+.contact li p:hover {
+    color: white;
+}
+
+.contact li img {
+   margin-right: 15px;
+}
+
+.contact h4 {
+    color: rgb(192, 190, 190);
+}
+
+.contact p {
+    color: rgb(192, 190, 190);
+    font-size: 14px;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.thankyou {
+    color: rgb(192, 190, 190);
+    font-size: 1.5em;
+    /* margin-top: 50px; */
+}
+
+.thankyou span {
+    color: orange;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 50px;
+    padding-top: 15px;
+    color: rgb(192, 190, 190);
+    font-size: 15px;
+    border-top: 1px solid rgb(78, 78, 78);
+}
+
+.copyright span {
+    font-weight: bold;
 }
