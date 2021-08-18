@@ -152,15 +152,3 @@
         height: 150px;
     }
 }
-
-@media (max-width:697px) {
-    footer  {
-        height: 320px;
-    }
-}
-
-@media (min-width:279px) and (max-width:717px) {
-    footer  {
-        height: 370px;
-    }
-}
